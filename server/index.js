@@ -36,7 +36,7 @@ app.post('/add/task', async (req, res) => {
 });
 
 //Get All Tasks
-app.get('/get/alltasks', async (req, res) => {
+app.get('/get/all/task', async (req, res) => {
     const tasks = await Task.find();
     res.send(tasks);
 });
